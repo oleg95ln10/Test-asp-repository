@@ -25,5 +25,17 @@ namespace WebApplication4_test.Controllers
             return View("Result",
             (object)String.Format("Product name: {0}", productName));
         }
+        public ViewResult CreateProduct()
+        {
+            Product myProduct = new Product
+            {
+                ProductID = 100,
+                Name = "Kayak",
+                Description = "A boat for one person",
+                Price = 275M,
+                Category = "Watersports"
+            };
+            return View("Result", (object)String.Format("Category: {0}", myProduct.Category));
+        }
     }
 }
