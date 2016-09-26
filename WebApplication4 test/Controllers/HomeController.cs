@@ -8,9 +8,9 @@ namespace WebApplication4_test.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public string Index()
         {
-            return View();
+            return "Navigate to a URL to show an example";
         }
 
         public ActionResult About()
