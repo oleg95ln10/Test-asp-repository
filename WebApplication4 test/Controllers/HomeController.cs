@@ -13,18 +13,5 @@ namespace WebApplication4_test.Controllers
             return "Navigate to a URL to show an example";
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
